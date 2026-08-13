@@ -8,7 +8,7 @@ import java.util.Objects;
 @Entity
 public class SoftwareEngineer {
     @Id // PK
-    private int id;
+    private Integer id;
     private String name;
     private String techStack;
 

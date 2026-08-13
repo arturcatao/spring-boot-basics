@@ -1,6 +1,8 @@
 package com.arturcatao;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.util.Objects;
@@ -8,6 +10,7 @@ import java.util.Objects;
 @Entity
 public class SoftwareEngineer {
     @Id // PK
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String techStack;
@@ -15,17 +18,17 @@ public class SoftwareEngineer {
     public SoftwareEngineer() {
     }
 
-    public SoftwareEngineer(int id, String name, String techStack) {
+    public SoftwareEngineer(Integer id, String name, String techStack) {
         this.id = id;
         this.name = name;
         this.techStack =techStack;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

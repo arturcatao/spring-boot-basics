@@ -1,5 +1,7 @@
 package com.arturcatao;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,8 +27,10 @@ public class SoftwareEngineerController {
     }
 
     @PostMapping
-    public void addNewSoftwareEngineer(@RequestBody SoftwareEngineer swe) {
-        softwareEngineerService.insertSoftwareEngineer(swe);
+    public ResponseEntity<SoftwareEngineer> addNewSoftwareEngineer(@RequestBody SoftwareEngineer swe) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                softwareEngineerService.insertSoftwareEngineer(swe)
+        );
     }
 
     @DeleteMapping("{id}")

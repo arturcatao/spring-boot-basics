@@ -18,4 +18,3 @@ Besides that, I really enjoyed revisiting some of the concepts I learned in my O
 - DTOs — Separation between API requests/responses and database entities
 - Bean Validation — Request data validation using Jakarta Validation
 - Service Layer — Separation of business logic from controllers
-- Exception Handling — Handling errors and invalid requests

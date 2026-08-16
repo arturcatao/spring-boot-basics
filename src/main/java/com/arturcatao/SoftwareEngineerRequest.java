@@ -1,5 +1,7 @@
 package com.arturcatao;
 
+import jakarta.validation.constraints.NotBlank;
+
 public record SoftwareEngineerRequest(
         String name,
         String password,

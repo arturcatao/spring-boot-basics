@@ -1,8 +1,10 @@
 package com.arturcatao;
 
+import jakarta.validation.constraints.NotBlank;
+
 public record SoftwareEngineerDto(
-        String id,
-        String name,
+        @NotBlank String id,
+        @NotBlank String name,
         String techStack
 ) {
 

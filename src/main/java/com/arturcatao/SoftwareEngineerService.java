@@ -17,8 +17,11 @@ public class SoftwareEngineerService {
         return softwareEngineerRepository.findAll();
     }
 
-    public SoftwareEngineer insertSoftwareEngineer(SoftwareEngineer swe) {
-        return softwareEngineerRepository.save(swe);
+    public SoftwareEngineerDto insertSoftwareEngineer(SoftwareEngineerRequest sweRequest) {
+        SoftwareEngineer swe = new SoftwareEngineer(sweRequest);
+        softwareEngineerRepository.save(swe);
+
+        return new SoftwareEngineerDto(swe);
     }
 
     public SoftwareEngineer getSoftwareEngineerById(Integer id) {

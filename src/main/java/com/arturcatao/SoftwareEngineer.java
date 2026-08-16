@@ -13,6 +13,7 @@ public class SoftwareEngineer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private String password; // just for learning purposes
     private String techStack;
 
     public SoftwareEngineer() {
@@ -22,6 +23,12 @@ public class SoftwareEngineer {
         this.id = id;
         this.name = name;
         this.techStack =techStack;
+    }
+
+    public SoftwareEngineer(SoftwareEngineerRequest sweRequest) {
+        this.name = sweRequest.name();
+        this.password = sweRequest.password();
+        this.techStack = sweRequest.techStack();
     }
 
     public Integer getId() {

@@ -27,7 +27,7 @@ public class SoftwareEngineerController {
     }
 
     @PostMapping
-    public ResponseEntity<SoftwareEngineer> addNewSoftwareEngineer(@RequestBody SoftwareEngineer swe) {
+    public ResponseEntity<SoftwareEngineerDto> addNewSoftwareEngineer(@RequestBody SoftwareEngineerRequest swe) {
         return ResponseEntity.status(HttpStatus.CREATED).body(
                 softwareEngineerService.insertSoftwareEngineer(swe)
         );

@@ -1,5 +1,9 @@
-package com.arturcatao;
+package com.arturcatao.controller;
 
+import com.arturcatao.dto.SoftwareEngineerDto;
+import com.arturcatao.request.SoftwareEngineerRequest;
+import com.arturcatao.service.SoftwareEngineerService;
+import com.arturcatao.entity.SoftwareEngineer;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

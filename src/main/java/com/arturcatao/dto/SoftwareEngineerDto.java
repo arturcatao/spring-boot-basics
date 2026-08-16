@@ -1,4 +1,6 @@
-package com.arturcatao;
+package com.arturcatao.dto;
+
+import com.arturcatao.entity.SoftwareEngineer;
 
 public record SoftwareEngineerDto(
         String id,

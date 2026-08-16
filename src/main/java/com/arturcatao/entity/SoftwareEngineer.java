@@ -1,5 +1,6 @@
-package com.arturcatao;
+package com.arturcatao.entity;
 
+import com.arturcatao.request.SoftwareEngineerRequest;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

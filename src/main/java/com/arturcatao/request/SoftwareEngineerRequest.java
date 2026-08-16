@@ -1,4 +1,4 @@
-package com.arturcatao;
+package com.arturcatao.request;
 
 import jakarta.validation.constraints.NotBlank;
 

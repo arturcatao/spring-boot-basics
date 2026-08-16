@@ -1,9 +1,12 @@
-package com.arturcatao;
+package com.arturcatao.service;
 
+import com.arturcatao.dto.SoftwareEngineerDto;
+import com.arturcatao.entity.SoftwareEngineer;
+import com.arturcatao.repository.SoftwareEngineerRepository;
+import com.arturcatao.request.SoftwareEngineerRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class SoftwareEngineerService {
